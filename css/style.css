@@ -1,0 +1,78 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.relative{
+	width: 600px;
+	position: relative;
+}
+.relative h1{
+    position: absolute;
+    bottom: -164px;
+    color: deeppink;
+    font-size: 50px;
+    max-width: 400px;
+    left: 114px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(1, -0.17, 0, 1.42);
+    opacity: 0;
+}
+.relative img {
+    
+max-width: 100%;
+}
+
+.relative:hover h1 {
+	opacity: 1;
+	 bottom: 10px;
+
+}
+.ball{
+	
+display: block;	
+width: 30px;	
+height: 30px;	
+position: absolute;	
+background: chartreuse;	
+bottom: 40px;	
+left: 30px;	
+transform: rotate(68deg);
+animation-name: rotate;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+border-radius: 20px;
+}
+
+@keyframes rotate{
+	
+		20%{
+		transform:rotate(568deg);		
+		bottom: 20px;	
+		left: 10px;	
+
+	}	40%{
+		transform:rotate(-68deg);		
+		bottom: 50px;	
+		left: 15px;	
+
+	}	60%{
+		transform:rotate(168deg);		
+		bottom: 30px;	
+		left: 60px;	
+
+	}	80%{
+		transform:rotate(10deg);		
+		bottom: 40px;
+		left: 80px;	
+
+	}	100%{
+		transform:rotate(568deg);		
+		bottom: 20px;	
+		left: 10px;	
+
+	}
+	}
